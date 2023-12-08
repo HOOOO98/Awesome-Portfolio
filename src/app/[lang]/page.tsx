@@ -1,14 +1,11 @@
 import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
-import Banner from '@/components/main/Banner';
 
-export default function Home() {
+export default function Home({ params }: { params: { lang: string } }) {
   return (
     <>
       <Header />
-      <main>
-        <Banner />
-      </main>
+      <main>{params.lang}</main>
       <Footer />
     </>
   );
