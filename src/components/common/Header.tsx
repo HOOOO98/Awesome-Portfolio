@@ -9,7 +9,7 @@ function Header() {
     <>
       <AnimatePresence>
         <motion.div
-          className='w-screen flex flex-row justify-between p-6 items-baseline'
+          className='w-screen flex flex-row justify-between p-6'
           initial={{
             transform: 'translateY(-80px)',
             opacity: 0,
