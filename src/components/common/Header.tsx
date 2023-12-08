@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
       <AnimatePresence>
-        <motion.div
+        <motion.header
           className='w-screen flex flex-row justify-between p-6'
           initial={{
             transform: 'translateY(-80px)',
@@ -65,7 +65,7 @@ function Header() {
               </a>
             </li>
           </ul>
-        </motion.div>
+        </motion.header>
       </AnimatePresence>
     </>
   );
