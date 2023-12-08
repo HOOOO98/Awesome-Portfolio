@@ -20,7 +20,7 @@ function Banner() {
             opacity: [0, 0.5, 1],
           }}
           transition={{
-            duration: 2.5,
+            duration: 3,
             ease: 'easeInOut',
           }}
         >
@@ -39,7 +39,7 @@ function Banner() {
             opacity: 1,
           }}
           transition={{
-            duration: 3.5,
+            duration: 4.5,
             delay: 1.5,
             ease: 'easeInOut',
           }}
@@ -57,7 +57,7 @@ function Banner() {
             opacity: 1,
           }}
           transition={{
-            duration: 3.5,
+            duration: 4.5,
             delay: 1.5,
             ease: 'easeInOut',
           }}
