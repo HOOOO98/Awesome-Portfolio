@@ -5,19 +5,25 @@ import Banner from '@/components/ja/Banner';
 import Carousel from '@/components/ja/Carousel';
 import StackInfo from '@/components/ja/StackInfo';
 
+import Page404 from '../404page';
+
 export default function Home({ params }: { params: { lang: string } }) {
   return (
     <>
-      <Header />
       {params.lang === 'ja' ? (
-        <main>
-          <Banner />
-          <Carousel />
-          <StackInfo />
-        </main>
-      ) : null}
-      <Footer />
-      <LanguageButton lang='ja' />
+        <>
+          <Header />
+          <main>
+            <Banner />
+            <Carousel />
+            <StackInfo />
+          </main>
+          <Footer />
+          <LanguageButton lang='ja' />
+        </>
+      ) : (
+        <Page404 />
+      )}
     </>
   );
 }
