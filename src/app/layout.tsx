@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'DEVSTEP',
     description: '프론트엔드 개발자 성장과정을 담은 포트폴리오',
-    url: 'https://devstep.vercel.app/',
     siteName: 'DEVSTEP',
     images: [
       {
@@ -20,8 +19,6 @@ export const metadata: Metadata = {
         height: 600,
       },
     ],
-    locale: 'en-US',
-    type: 'website',
   },
 };
 
@@ -31,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html>
       <body className='bg-[rgba(220,220,220,.2)]'>{children}</body>
     </html>
   );
