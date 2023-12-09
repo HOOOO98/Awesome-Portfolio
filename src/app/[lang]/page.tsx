@@ -1,5 +1,6 @@
 import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
+import LanguageButton from '@/components/common/LanguageButton';
 import Banner from '@/components/ja/Banner';
 import Carousel from '@/components/ja/Carousel';
 import StackInfo from '@/components/ja/StackInfo';
@@ -16,6 +17,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         </main>
       ) : null}
       <Footer />
+      <LanguageButton lang='ja' />
     </>
   );
 }
