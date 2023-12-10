@@ -9,7 +9,7 @@ function Carousel() {
     <div className='w-screen h-screen overflow-hidden flex items-center justify-center flex-col gap-12 bg-zinc-100 '>
       <div className='flex items-center justify-start flex-col gap-12'>
         <h1 className='text-6xl font-bold'>Inspire</h1>
-        <h2 className='text-3xl font-bold text-gray-400'>
+        <h2 className='text-3xl font-bold text-gray-400 mb:text-xl mb:text-center'>
           All that surrounds me is a wellspring of inspiration.
         </h2>
       </div>

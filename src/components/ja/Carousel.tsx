@@ -9,7 +9,7 @@ function Carousel() {
     <div className='w-screen h-screen overflow-hidden flex items-center justify-center flex-col gap-12 bg-zinc-100 '>
       <div className='flex items-center justify-start flex-col gap-12'>
         <h1 className='text-6xl font-bold'>霊感</h1>
-        <h2 className='text-3xl font-bold text-gray-400'>
+        <h2 className='text-3xl font-bold text-gray-400 mb:text-lg mb:text-center'>
           私の周りにあるのはインスピレーションの泉だけです。
         </h2>
       </div>
