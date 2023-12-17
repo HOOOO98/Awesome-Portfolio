@@ -187,7 +187,7 @@ function StackInfo() {
           className='w-[250px] h-[250px]  mb:w-[150px] mb:h-[150px]'
         >
           <Image
-            src='/images/cypressIcon.png'
+            src='/images/playwrightIcon.png'
             alt='Cypress Icon'
             width={250}
             height={250}
@@ -199,7 +199,7 @@ function StackInfo() {
             Cypress
           </h1>
           <h2 className='text-gray-500 text-xl leading-normal mb:text-lg'>
-            Cypressを使用して、各機能の正確な検証を行うこと
+            Playwrightを使用して、各機能の正確な検証を行うこと
             そして、テストを通しての特徴。
           </h2>
         </div>
