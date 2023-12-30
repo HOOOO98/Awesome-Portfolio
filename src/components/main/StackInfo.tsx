@@ -188,7 +188,7 @@ function StackInfo() {
           className='w-[250px] h-[250px]  mb:w-[150px] mb:h-[150px]'
         >
           <Image
-            src='/images/cypressIcon.png'
+            src='/images/playwrightIcon.png'
             alt='Cypress Icon'
             width={250}
             height={250}
@@ -197,11 +197,11 @@ function StackInfo() {
         </motion.div>
         <div className='w-[300px] text-center'>
           <h1 className='text-6xl font-bold leading-normal mb:text-4xl'>
-            Cypress
+            Playwright
           </h1>
           <h2 className='text-gray-500 text-xl leading-normal mb:text-lg'>
-            Using Cypress, I can conduct precise verification of each function
-            and feature through testing.
+            Using Playwright, I can conduct precise verification of each
+            function and feature through testing.
           </h2>
         </div>
       </div>

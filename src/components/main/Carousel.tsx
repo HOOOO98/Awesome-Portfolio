@@ -13,14 +13,14 @@ function Carousel() {
           All that surrounds me is a wellspring of inspiration.
         </h2>
       </div>
-      <Marquee className='flex' pauseOnHover={true} direction='left' speed={40}>
+      <Marquee className='flex' pauseOnHover={true} direction='left' speed={90}>
         {images.map((image, index) => (
           <a
             key={index}
             href={image.href}
             className='flex-shrink-0 relative'
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer '
           >
             <div className='w-[450px] h-[270px] bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0)] absolute flex flex-col justify-end items-start p-6 rounded-2xl'>
               <p className='text-gray-300 text-xs'>{image.title}</p>
@@ -31,7 +31,7 @@ function Carousel() {
               width={450}
               height={270}
               src={image.src}
-              className='rounded-2xl mr-12 w-[450px] h-[270px] object-cover'
+              className='rounded-2xl mr-12 w-[450px] h-[270px] object-cover '
             />
           </a>
         ))}
