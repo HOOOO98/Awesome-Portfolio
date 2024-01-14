@@ -10,7 +10,7 @@ function Banner() {
         style={{ height: 'calc(100vh - 7rem)' }}
       >
         <motion.div
-          className='text-[11rem] font-black tracking-wider z-10 mb:text-[4rem] tb:text-[9rem]'
+          className='text-[9rem] font-black tracking-wider z-10 mb:text-[3rem] tb:text-[5rem]'
           initial={{
             transform: 'scale(10)',
             opacity: 0,
@@ -29,7 +29,7 @@ function Banner() {
       </section>
       <div className='w-screen absolute top-0 left-0 flex flex-col h-full z-0'>
         <motion.div
-          className='text-white text-[6rem] font-black tracking-wider drop-shadow-lg absolute top-[15%] left-[5%] mb:text-[1.25rem] mb:bottom-[30%] tb:text-[3rem]'
+          className='text-white text-[6rem] font-black tracking-wider drop-shadow-lg absolute top-[15%] left-[5%] mb:text-[2.5rem] mb:bottom-[30%] tb:text-[3.5rem]'
           initial={{
             transform: 'translateX(-200px)',
             opacity: 0,
@@ -47,7 +47,7 @@ function Banner() {
           세상이 깜짝 놀랄
         </motion.div>
         <motion.div
-          className='text-white text-[6rem] font-black tracking-wider absolute right-[5%] bottom-[15%] drop-shadow-lg mb:text-[1.25rem] mb:botton-[30%] tb:text-[3rem]'
+          className='text-white text-[5.5rem] font-black tracking-wider absolute right-[5%] bottom-[15%] drop-shadow-lg mb:text-[2rem] mb:botton-[30%] tb:text-[3rem]'
           initial={{
             transform: 'translateX(200px)',
             opacity: 0,
