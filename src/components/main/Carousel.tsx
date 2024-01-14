@@ -8,9 +8,9 @@ function Carousel() {
   return (
     <div className='w-screen h-screen overflow-hidden flex items-center justify-center flex-col gap-12 bg-zinc-100 '>
       <div className='flex items-center justify-start flex-col gap-12'>
-        <h1 className='text-6xl font-bold'>Inspire</h1>
+        <h1 className='text-6xl font-bold'>프로젝트</h1>
         <h2 className='text-3xl font-bold text-gray-400 mb:text-xl mb:text-center'>
-          All that surrounds me is a wellspring of inspiration.
+          재밌어 보이는 것들을 하나씩 만들고 있습니다.
         </h2>
       </div>
       <Marquee className='flex' pauseOnHover={true} direction='left' speed={90}>

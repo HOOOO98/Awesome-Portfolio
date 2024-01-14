@@ -24,7 +24,7 @@ function Banner() {
             ease: 'easeInOut',
           }}
         >
-          DEVSTEP
+          준비는 됐으니까
         </motion.div>
       </section>
       <div className='w-screen absolute top-0 left-0 flex flex-col h-full z-0'>
@@ -44,7 +44,7 @@ function Banner() {
             ease: 'easeInOut',
           }}
         >
-          MAKE SOMETHING GOOD
+          세상이 깜짝 놀랄
         </motion.div>
         <motion.div
           className='text-white text-[6rem] font-black tracking-wider absolute right-[5%] bottom-[15%] drop-shadow-lg mb:text-[1.25rem] mb:botton-[30%] tb:text-[3rem]'
@@ -62,7 +62,7 @@ function Banner() {
             ease: 'easeInOut',
           }}
         >
-          DAY BY DAY
+          무언가를 만들어 볼까요?
         </motion.div>
       </div>
     </div>
