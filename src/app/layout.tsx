@@ -17,7 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html
+      style={{
+        overflowX: 'hidden',
+      }}
+    >
       <Head>
         <meta property='og:title' content='DEVSTEP' />
         <meta

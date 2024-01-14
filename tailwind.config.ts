@@ -1,4 +1,18 @@
 import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
+
+const hideScrollbarPlugin = plugin(function ({ addUtilities }) {
+  const newUtilities = {
+    '.hide-scrollbar': {
+      'scrollbar-width': 'none',
+      '-ms-overflow-style': 'none',
+      '&::-webkit-scrollbar': {
+        display: 'none',
+      },
+    },
+  };
+  addUtilities(newUtilities);
+});
 
 const config: Config = {
   content: [
@@ -12,6 +26,6 @@ const config: Config = {
       tb: { min: '768px', max: '1023px' },
     },
   },
-  plugins: [],
+  plugins: [hideScrollbarPlugin],
 };
 export default config;

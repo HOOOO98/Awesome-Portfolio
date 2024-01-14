@@ -22,7 +22,7 @@ function LanguageButton({ lang }: LanguageButtonProps) {
       onClick={lang === 'ja' ? routeEn : routeJa}
       className='fixed right-12 bottom-12 z-50 text-xl font-bold text-gray-500'
     >
-      {lang === 'ja' ? 'ENGLISH' : 'JAPANESE'}
+      {lang === 'ja' ? '한국어' : 'JAPANESE'}
     </button>
   );
 }

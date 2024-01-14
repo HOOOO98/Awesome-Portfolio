@@ -18,10 +18,8 @@ function StackInfo() {
   const isTypescriptView = useInView(typescript);
   const reactnative = useRef(null);
   const isReactnativeView = useInView(reactnative);
-  const python = useRef(null);
-  const isPythonView = useInView(python);
-  const cypress = useRef(null);
-  const isCypressView = useInView(cypress);
+  const playwright = useRef(null);
+  const isPlaywrightView = useInView(playwright);
 
   const { scrollYProgress } = useScroll();
   const rotation = useTransform(scrollYProgress, (val) => val * 360);
@@ -48,12 +46,10 @@ function StackInfo() {
             React
           </h1>
           <h2 className='text-gray-500 text-xl leading-normal mb:text-sm'>
-            Utilizing the features of the virtual DOM, I harness the benefits of
-            efficient rendering.
-          </h2>
-          <h2 className='text-gray-500 text-xl leading-normal mb:text-sm'>
-            Additionally, leveraging the extensive ecosystem, I am able to
-            extend projects seamlessly.
+            커스텀 훅을 분리하고 공통 컴포넌트를 통해 코드의 재사용성을 높힐 수
+            있습니다
+            <br />
+            웹표준을 준수하여 코드를 작성하며 Lighthouse 점수를 고려합니다
           </h2>
         </div>
       </div>
@@ -76,9 +72,7 @@ function StackInfo() {
             Next
           </h1>
           <h2 className='text-gray-500 text-xl leading-normal mb:text-lg'>
-            Dynamic routing allows for straightforward implementation of pages,
-            and it enables the differentiation and utilization of server
-            components and client components.
+            SEO 최적화와 서버컴포넌트를 사용하기 위해 App Router를 사용헀습니다
           </h2>
         </div>
       </div>
@@ -103,12 +97,8 @@ function StackInfo() {
             Typescript
           </h1>
           <h2 className='text-gray-500 text-xl leading-normal mb:text-sm'>
-            Enhancing clarity in API communication, I've reduced errors by
-            enforcing precise data type specifications.
-          </h2>
-          <h2 className='text-gray-500 text-xl leading-normal mb:text-sm'>
-            Additionally, I've improved transparency by explicitly declaring
-            data types for data transfers between components.
+            컴파일 과정에서 타입을 확인하고 에러를 미리 확인할 수 있어 코드의
+            안정성을 높일 수 있습니다
           </h2>
         </div>
       </div>
@@ -129,12 +119,14 @@ function StackInfo() {
           />
         </motion.div>
         <div className='w-[300px] mb:w-[160px]'>
-          <h1 className='text-6xl font-bold leading-normal mb:text-2xl'>
-            React Native
+          <h1 className='text-6xl font-bold leading-normal mb:text-2xl text-center'>
+            React
+            <br />
+            Native
           </h1>
           <h2 className='text-gray-500 text-xl leading-normal mb:text-sm'>
-            Utilizing React syntax, it's possible to extend the service into a
-            mobile app.
+            JSX 문법을 기반으로 크로스 플랫폼 개발을 쉽게 시작할 수 있어
+            채택했습니다
           </h2>
         </div>
         <motion.div
@@ -153,37 +145,11 @@ function StackInfo() {
           />
         </motion.div>
       </div>
-      <div className='w-screen h-screen flex flex-row justify-evenly items-center'>
-        <div className='w-[300px] mb:w-[170px]'>
-          <h1 className='text-6xl font-bold leading-normal  mb:text-2xl'>
-            Python
-          </h1>
-          <h2 className='text-gray-500 text-xl leading-normal  mb:text-sm'>
-            I can quickly approach solutions to algorithmic problems by
-            leveraging Python libraries.
-          </h2>
-        </div>
-        <motion.div
-          ref={python}
-          animate={{
-            translateX: isPythonView ? ['100px', '-10px', '0px'] : 'none',
-          }}
-          className='w-[250px] h-[250px] mb:w-[100px] mb:h-[100px]'
-        >
-          <Image
-            src='/images/pythonIcon.png'
-            alt='React Icon'
-            width={250}
-            height={250}
-            className='w-[250px] h-[250px] mb:w-[100px] mb:h-[100px]'
-          />
-        </motion.div>
-      </div>
       <div className='w-screen h-screen flex flex-col justify-center gap-6 items-center'>
         <motion.div
-          ref={cypress}
+          ref={playwright}
           animate={{
-            translateY: isCypressView ? ['-200px', '10px', '0px'] : 'none',
+            translateY: isPlaywrightView ? ['-200px', '10px', '0px'] : 'none',
           }}
           className='w-[250px] h-[250px]  mb:w-[150px] mb:h-[150px]'
         >
@@ -200,8 +166,9 @@ function StackInfo() {
             Playwright
           </h1>
           <h2 className='text-gray-500 text-xl leading-normal mb:text-lg'>
-            Using Playwright, I can conduct precise verification of each
-            function and feature through testing.
+            크로스 브라우징에 대한 병렬 테스트를 간단히 수행할 수 있고
+            <br />
+            웹접근성에 대한 테스트를 수행할 수 있어서 사용했습니다
           </h2>
         </div>
       </div>
